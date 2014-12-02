@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
 				TextView showView = (TextView)findViewById(R.id.textView2);
 				showView.setGravity(Gravity.CENTER);
 				//TMD java里面强转不支持(Type)(XXX), 而是((Type)XXX)
-				showView.setText("当前点击的是："+ ((TextView)arg1).getText().toString());
+				showView.setText("当前点击的是： "+ ((TextView)arg1).getText().toString());
 				
 			}
 		});
