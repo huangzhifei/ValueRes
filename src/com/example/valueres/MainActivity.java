@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -83,10 +84,10 @@ public class MainActivity extends Activity {
 					long arg3) {
 				// TODO Auto-generated method stub
 				
-				TextView showView = (TextView)findViewById(R.id.textView2);
+				EditText showView = (EditText)findViewById(R.id.EditText1);
 				showView.setGravity(Gravity.CENTER);
 				//TMD java里面强转不支持(Type)(XXX), 而是((Type)XXX)
-				showView.setText("当前点击的是："+ ((TextView)arg1).getText().toString());
+				showView.setText("当前点击的是： "+ ((TextView)arg1).getText().toString());
 				
 			}
 		});
