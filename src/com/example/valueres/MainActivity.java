@@ -1,18 +1,5 @@
 package com.example.valueres;
 
-import android.app.Activity;
-import android.content.res.Resources;
-import android.os.Bundle;
-import android.view.Gravity;
-import android.view.Menu;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
-import android.widget.EditText;
-import android.widget.GridView;
-import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -32,10 +19,14 @@ public class MainActivity extends Activity {
 		R.color.c9
 	};
 	
+	//private File file = null;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		String path = Environment.getRootDirectory().getPath();
+		//file = new File()
 		
 		BaseAdapter baseAdapter = new BaseAdapter() {
 			
